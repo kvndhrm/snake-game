@@ -1,0 +1,24 @@
+{
+  "name": "vouch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:ui": "HEADLESS=false npm run test",
+    "test:debug": "HEADLESS=false PWDEBUG=1 npm run test",
+    "test:ongoing": "HEADLESS=false npm run test -- --tags @ongoing",
+    "test:report": "cucumber-js --format json:reports/cucumber-report.json --format html:reports/cucumber-report.html",
+    "report": "node generate-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Vouch Automation Test",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@types/node": "^24.3.1",
+    "playwright": "^1.55.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

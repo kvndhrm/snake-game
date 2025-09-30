@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Reports (keep directory structure, ignore report files)
+reports/*.json
+reports/*.xml
+reports/*.html
+!reports/README.md
+
+# Test artifacts
+test-results/
+playwright-report/
+screenshots/
+videos/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
